@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Movies</title>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Movie Tickets</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Select a Movie:</h2>
+          <form id="">
+            <div class="btn-group movies">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Movies Available
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Uncut Gems</button>
+                    <button class="dropdown-item" type="button">1917</button>
+                    <button class="dropdown-item" type="button">Parasite</button>
+                </div>
+            </div>
+            <h2>Time of Day:</h2>
+            <div class="btn-group times">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select a Time
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">9:00 am</button>
+                    <button class="dropdown-item" type="button">1:00 pm</button>
+                    <button class="dropdown-item" type="button">7:30 pm</button>
+                </div>
+            </div>
+            <h2>Time of Day:</h2>
+            <div class="btn-group age">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Ages
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">18</button>
+                    <button class="dropdown-item" type="button">19-22</button>
+                    <button class="dropdown-item" type="button">55+</button>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn-secondary price-btn">Show Me Price</button>
+            </div>
+        </form>
+        <div id="show-price">
+            <p>$15</p>
+            <p>$10</p>
+            <p>$5</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
