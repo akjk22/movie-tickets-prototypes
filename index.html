@@ -15,49 +15,40 @@
       <h1>Purchase Movie Tickets</h1>
       <div class="row">
         <div class="col-md-6">
-          <h2>Select a Movie:</h2>
-          <form id="">
-            <div class="btn-group movies">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Movies Available
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">Uncut Gems</button>
-                    <button class="dropdown-item" type="button">1917</button>
-                    <button class="dropdown-item" type="button">Parasite</button>
-                </div>
+          <form id="price-show">
+            <h2>Movie:</h2>
+              <div class="form-group movies">
+                <label for="movies">Choose what movie you want to see</label>
+                <select class="form-control" id="movies">
+                  <option>Uncut Gems</option>
+                  <option>1917</option>
+                  <option>Parasite</option>
+                </select>
+              </div>
+            <h2>Time:</h2>
+            <div class="form-group times">
+              <label for="times">Choose what time you want to see your movie</label>
+              <select class="form-control" id="times">
+                <option>9:00 am</option>
+                <option>1:00 pm</option>
+                <option>7:30 pm</option>
+              </select>
             </div>
-            <h2>Time of Day:</h2>
-            <div class="btn-group times">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select a Time
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">9:00 am</button>
-                    <button class="dropdown-item" type="button">1:00 pm</button>
-                    <button class="dropdown-item" type="button">7:30 pm</button>
-                </div>
-            </div>
-            <h2>Time of Day:</h2>
-            <div class="btn-group age">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Ages
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">18</button>
-                    <button class="dropdown-item" type="button">19-22</button>
-                    <button class="dropdown-item" type="button">55+</button>
-                </div>
+            <h2>Age</h2>
+            <div class="form-group age">
+              <label for="age">Choose your age or age group</label>
+              <select class="form-control" id="age">
+                <option>18</option>
+                <option>19-22</option>
+                <option>55+</option>
+              </select>
             </div>
             <div>
                 <button type="submit" class="btn-secondary price-btn">Show Me Price</button>
             </div>
-        </form>
-        <div id="show-price">
-            <p>$15</p>
-            <p>$10</p>
-            <p>$5</p>
-        </div>
+           </form>
+          <div id="price-results">
+          </div>
         </div>
       </div>
     </div>
